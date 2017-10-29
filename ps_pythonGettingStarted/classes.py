@@ -24,7 +24,15 @@ class Student:
     def get_school_name(self):
         return self.school_name
 
-print(Student.school_name)
+class HighSchoolStudent(Student): # "Student" is the parent class
+
+    school_name = "Hampton High School"
+
+    def get_school_name(self):
+        return "This is a High School Student"
+
+james = HighSchoolStudent("james") # calling (methond/class) HighSchoolStudent
+print(james.get_school_name())  # return results via get_school_name function
 
 #mark = Student("Mark")
 #print(mark)
