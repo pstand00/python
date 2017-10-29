@@ -8,7 +8,10 @@ class Student:
         student = {"name": name, "student_id": student_id}
         students.append(student)
 
+    def __str__(self):
+        return "Student"
+
 mark = Student("Mark")
+print(mark)
 
-print(students)
-
+#print(students)
