@@ -31,8 +31,13 @@ class HighSchoolStudent(Student): # "Student" is the parent class
     def get_school_name(self):
         return "This is a High School Student"
 
+    def get_name_capitalize(self):
+        original_value = super().get_name_capitalize()
+        return original_value + "-HS    "
+
+
 james = HighSchoolStudent("james") # calling (methond/class) HighSchoolStudent
-print(james.get_school_name())  # return results via get_school_name function
+print(james.get_name_capitalize())  # return results via get_school_name function
 
 #mark = Student("Mark")
 #print(mark)
